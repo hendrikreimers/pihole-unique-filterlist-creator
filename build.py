@@ -8,7 +8,7 @@ f.createDir("build")
 urlListFile = open('urlList.txt', 'r')
 urlList     = urlListFile.readlines()
 tmpFileList = []
-buildFile   = f.getScriptPath() + "/build/blacklist.txt"
+buildFile   = f.getAbsPath("build/blacklist.txt")
 
 # delete old list
 f.deleteFilesInList([buildFile])

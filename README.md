@@ -36,6 +36,19 @@ Build the URL list based on the reports of:
 * https://firebog.net/
 
 
+## Windows binary
+
+The Windows binary is build with pyInstaller and can be found in the "dist" folder.
+It has been build under Windows with this command:
+    
+    pyinstaller build.py --onefile
+
+### Beware ###
+
+Some antivirus apps thinks it's a trojan in pyinstaller builded binary.
+You will find some details in issues on git of pyinstaller. Maybe in future it will be fixed.
+
+
 ## Support it
 Do you have another URL for that list or want to optimize the python script, or something else?
 Just check it out, forge or do a pull request.

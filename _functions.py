@@ -20,6 +20,10 @@ def getScriptPath():
     return os.path.abspath(pathname)
 
 
+def getAbsPath(relPath: str):
+    return os.path.join(getScriptPath(), relPath)
+
+
 # Downloads a file by url
 def download(url: str, targetFile: str):
     print("Downloading: " + url)
@@ -35,10 +39,10 @@ def download(url: str, targetFile: str):
 def concatenateFiles(sourceFileList: list, targetFile: str):
     lines_seen = set() # cache for alread read lines
     regex = r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]" # Domain validation expression
-    with open(targetFile, 'w', encoding = "utf8") as outfile: # open target file
+    with open(targetFile, 'w', encoding="utf8") as outfile: # open target file
         for fname in sourceFileList: # run through each temp file
             if os.path.exists(fname): # check if file really exist (maybe not due fetch errors)
-                for each_line in open(fname, "r", encoding = "utf8"): # read each line in that file
+                for each_line in open(fname, "r", encoding="utf8"): # read each line in that file
                     if "#" not in each_line: # ignore something like comments
                         matches = re.findall(regex, each_line.strip()) # find only domain names
                         if len(matches) > 0:
