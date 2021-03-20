@@ -34,6 +34,7 @@ The regex blacklis is also helpful for blocking youtube ads in the browser (not 
 Build the URL list based on the reports of:
 * https://www.technoy.de/lists/blocklists-fuer-pihole/
 * https://firebog.net/
+* https://github.com/topics/pihole-blocklists
 
 
 ## Windows binary
