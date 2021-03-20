@@ -47,9 +47,11 @@ def concatenateFiles(sourceFileList: list, targetFile: str):
                         matches = re.findall(regex, each_line.strip()) # find only domain names
                         if len(matches) > 0:
                             outline = '0.0.0.0 ' + matches[0].strip() + '\n' # merges to correct pihole block line
-                            if outline not in lines_seen: # check if line alread read
-                                outfile.write(outline) # write to big file
-                                lines_seen.add(outline) # cache the line so it will be not written twice
+                            outline = outline.replace("0.0.0.0 0.0.0.0", "0.0.0.0 ") # some dirty fix
+                            if outline.strip() != "0.0.0.0": # dont block all ;-)
+                                if outline not in lines_seen: # check if line alread read
+                                    outfile.write(outline) # write to big file
+                                    lines_seen.add(outline) # cache the line so it will be not written twice
     
     lines_seen = [] # clear cache (maybe useless)
 
