@@ -38,18 +38,22 @@ def download(url: str, targetFile: str):
 # concatenate files and not adding duplicates to the big file
 def concatenateFiles(sourceFileList: list, targetFile: str):
     lines_seen = set() # cache for alread read lines
-    regex = r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]" # Domain validation expression
+    regex = r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$" # Domain validation expression
+    commentRegex = re.compile(r"^#.*$")
+    
     with open(targetFile, 'w', encoding="utf8") as outfile: # open target file
         for fname in sourceFileList: # run through each temp file
             if os.path.exists(fname): # check if file really exist (maybe not due fetch errors)
                 for each_line in open(fname, "r", encoding="utf8"): # read each line in that file
-                    if "#" not in each_line: # ignore something like comments
+                    if not commentRegex.search(each_line): # ignore something like comments
                         matches = re.findall(regex, each_line.strip()) # find only domain names
                         if len(matches) > 0:
-                            outline = '0.0.0.0 ' + matches[0].strip() + '\n' # merges to correct pihole block line
-                            outline = outline.replace("0.0.0.0 0.0.0.0", "0.0.0.0 ") # some dirty fix
-                            if outline.strip() != "0.0.0.0": # dont block all ;-)
+                            outline = matches[0].strip() + '\n' # merges to correct pihole block line
+                            if outline.strip() != "0.0.0.0" and outline.strip() != "": # dont block all ;-)
                                 if outline not in lines_seen: # check if line alread read
+                                    if outline.strip() == "github.com":
+                                        print(fname)
+                                        print(outline.strip())
                                     outfile.write(outline) # write to big file
                                     lines_seen.add(outline) # cache the line so it will be not written twice
     

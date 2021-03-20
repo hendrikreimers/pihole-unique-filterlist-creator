@@ -12,6 +12,8 @@ tmpFileList = []
 #buildFile   = f.getAbsPath("build/blacklist.txt")
 buildFile   = "build/blacklist.txt".replace("/", os.sep)
 
+i = 0
+
 # delete old list
 f.deleteFilesInList([buildFile])
 
