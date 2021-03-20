@@ -1,4 +1,5 @@
 import _functions as f
+import os
 
 # create some folder
 f.createDir("tmp")
@@ -8,7 +9,8 @@ f.createDir("build")
 urlListFile = open('urlList.txt', 'r')
 urlList     = urlListFile.readlines()
 tmpFileList = []
-buildFile   = f.getAbsPath("build/blacklist.txt")
+#buildFile   = f.getAbsPath("build/blacklist.txt")
+buildFile   = "build/blacklist.txt".replace("/", os.sep)
 
 # delete old list
 f.deleteFilesInList([buildFile])

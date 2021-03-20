@@ -21,7 +21,7 @@ def getScriptPath():
 
 
 def getAbsPath(relPath: str):
-    return os.path.join(getScriptPath(), relPath)
+    return os.path.join(getScriptPath(), relPath.replace("/", os.sep))
 
 
 # Downloads a file by url
