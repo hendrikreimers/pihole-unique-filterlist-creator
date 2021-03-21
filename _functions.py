@@ -3,6 +3,18 @@ import wget
 import tempfile
 import re
 
+# returns a list of files in a folder which matches "list-[...].txt"
+# returns the fullpath including filename and just the filename
+def getFilesInFolder(path: str):
+    resultList = []
+    for file in os.listdir(path):
+        if file.endswith(".txt") and file.startswith("list-"):
+            fpath = os.path.abspath(os.path.join(path, file))
+            resultList.append([fpath,file])
+    
+    return resultList
+
+
 # creates a directory
 def createDir(dirName):
     if not os.path.exists(dirName):
@@ -21,7 +33,7 @@ def getScriptPath():
 
 
 def getAbsPath(relPath: str):
-    return os.path.join(getScriptPath(), relPath.replace("/", os.sep))
+    return os.path.abspath(relPath.replace("/", os.sep))
 
 
 # Downloads a file by url
@@ -38,26 +50,28 @@ def download(url: str, targetFile: str):
 # concatenate files and not adding duplicates to the big file
 def concatenateFiles(sourceFileList: list, targetFile: str):
     lines_seen = set() # cache for alread read lines
-    regex = r"^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}[ \t]+)?(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$" # Domain validation expression
+    regex = r"^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}[ \t]+)?((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])$" # Domain validation expression
     commentRegex = re.compile(r"^#.*$")
     
     with open(targetFile, 'w', encoding="utf8") as outfile: # open target file
 
         for fname in sourceFileList: # run through each temp file
+            
             if os.path.exists(fname): # check if file really exist (maybe not due fetch errors)
-
                 for each_line in open(fname, "r", encoding="utf8"): # read each line in that file
+                    
                     if not commentRegex.search(each_line): # ignore something like comments
                         matches = re.findall(regex, each_line.strip()) # find only domain names
-
+                        
                         if len(matches) > 0:
-                            outline = matches[0].strip() + '\n' # merges to correct pihole block line
+                            if len(matches[0]) > 0:
+                                outline = matches[0][1].strip() + '\n' # merges to correct pihole block line
+                                
+                                if outline.strip() != "0.0.0.0" and outline.strip() != "127.0.0.1" and outline.strip() != "": # dont block all ;-)
+                                    if outline not in lines_seen: # check if line alread read
 
-                            if outline.strip() != "0.0.0.0" and outline.strip() != "": # dont block all ;-)
-                                if outline not in lines_seen: # check if line alread read
-
-                                    outfile.write(outline) # write to big file
-                                    lines_seen.add(outline) # cache the line so it will be not written twice
+                                        outfile.write(outline) # write to big file
+                                        lines_seen.add(outline) # cache the line so it will be not written twice
     
     lines_seen = [] # clear cache (maybe useless)
 

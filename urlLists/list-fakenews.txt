@@ -1,0 +1,4 @@
+# Fake Science
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Fake-Science
+# Corona
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/spam.mails

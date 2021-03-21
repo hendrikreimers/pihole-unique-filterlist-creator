@@ -3,16 +3,14 @@ import os
 
 # create some folder
 f.createDir("tmp")
-f.createDir("build")
+f.createDir("dist")
 
 # get some basics
-urlListFile = open('urlList.txt', 'r')
+urlListFile = open('urlLists/_nearly-all.txt', 'r')
 urlList     = urlListFile.readlines()
 tmpFileList = []
-#buildFile   = f.getAbsPath("build/blacklist.txt")
-buildFile   = "build/blacklist.txt".replace("/", os.sep)
-
-i = 0
+#buildFile   = f.getAbsPath("dist/blacklist-all.txt")
+buildFile   = "dist/_nearly-all.txt".replace("/", os.sep)
 
 # delete old list
 f.deleteFilesInList([buildFile])

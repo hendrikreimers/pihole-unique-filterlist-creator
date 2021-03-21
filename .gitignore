@@ -1,4 +1,8 @@
 .idea/
+dist/list-*.txt
+dist/_nearly-all.txt
+tmp/
+System Volume Information/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -10,7 +14,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-#build/
+build/
 tmp/
 develop-eggs/
 #dist/

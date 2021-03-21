@@ -1,0 +1,2 @@
+# Proxies to turnaround pihole
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/proxies

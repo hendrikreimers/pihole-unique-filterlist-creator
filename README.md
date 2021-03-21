@@ -5,21 +5,32 @@ Helps to create a really big filter blacklist for pi-hole with unique domains
 ## What does is do or not?
 It's a really small not perfect script, but works well :-)
 
-The python script gets all files from the URLs listed in the ***urlList.txt***
-and builds a unique blocking list in ***/build/blacklist.txt***
+The python script gets all files from the URLs listed in the ***urlLists/_nearly-all.txt***
+and builds a unique blocking list in ***/dist/_nearly-all.txt***
+
+The multi script does the same but takes or text files starting with "list-..." and builds categorized lists.
 
 By the way, it fixes some of the lists which are not having the correct IP for the blacklist and removes comments.
 
 ## The Lists
 
-See in the **build** folder for the lists
-
+See in the **dist** folder for the list results
+See in the **urlLists** folder for the URLs
 
 ### Blacklist
-Run the python script, maybe on your webserver or someone else
+Run the python script (build.py), maybe on your webserver or someone else
 and import the URL to your pihole blacklist adlist as only one single list.
 
 Or you could check it out on your pihole and add it as cronjob to build it in /var/www/html/pihole/blacklist.txt or somewhere else
+
+#### Multiple Blacklists
+
+Run the **build-multi.py** (or binary) for build categorizes lists. See dists/ folder for results
+
+**But beware**
+
+If you build multiple lists, it's possible that some domains are not unique over all. 
+Thats rises the file size, too.
 
 ### Whitelist
 You must include the whitelist by the admin panel or the console command manually
@@ -42,7 +53,9 @@ Build the URL list based on the reports of:
 The Windows binary is build with pyInstaller and can be found in the "dist" folder.
 It has been build under Windows with this command:
     
+    pip install pyinstaller
     pyinstaller build.py --onefile
+    pyinstaller build-multi.py --onefile
 
 ### Beware ###
 

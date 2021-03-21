@@ -1,0 +1,2 @@
+# Betrügerische Websites
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist

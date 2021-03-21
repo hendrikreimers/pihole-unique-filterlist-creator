@@ -1,0 +1,14 @@
+# Tiktok
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-tiktok.txt
+# Facebook
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-facebook.txt
+# Snapchat
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-snapchat.txt
+# Instagram
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-instagram.txt
+# Twitter
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-twitter.txt
+# Whatsapp
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/messaging/blocklist-messaging-w
+# Facebook (Firebog, w3kbl)
+https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt

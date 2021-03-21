@@ -1,0 +1,4 @@
+# Childprotection
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/child-protection
+# Xporn
+https://www.technoy.de/lists/xporn.txt
