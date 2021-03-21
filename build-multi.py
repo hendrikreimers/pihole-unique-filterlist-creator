@@ -13,7 +13,7 @@ commentRegex = re.compile(r"^#.*$")
 for urlFile in urlFileLists:
     urlList     = open(urlFile[0], 'r', encoding = 'utf8').readlines()
     tmpFileList = []
-    distFile    = os.path.join("dist", urlFile[1])
+    distFile    = f.getAbsPath(os.path.join("dist", urlFile[1]))
     
     f.deleteFilesInList([distFile])
     

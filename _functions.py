@@ -7,9 +7,9 @@ import re
 # returns the fullpath including filename and just the filename
 def getFilesInFolder(path: str):
     resultList = []
-    for file in os.listdir(path):
+    for file in os.listdir(getAbsPath(path)):
         if file.endswith(".txt") and file.startswith("list-"):
-            fpath = os.path.abspath(os.path.join(path, file))
+            fpath = getAbsPath(os.path.join(path, file))
             resultList.append([fpath,file])
     
     return resultList
@@ -17,23 +17,29 @@ def getFilesInFolder(path: str):
 
 # creates a directory
 def createDir(dirName):
-    if not os.path.exists(dirName):
-        os.makedirs(dirName)
+    dirPath = getAbsPath(dirName)
+    if not os.path.exists(dirPath):
+        os.makedirs(dirPath)
 
 
 # returns a temp file name
 def getTempFilename():
-    return os.path.join("tmp", next(tempfile._get_candidate_names()) + ".tmp")
+    return getAbsPath(os.path.join("tmp", next(tempfile._get_candidate_names()) + ".tmp"))
 
 
 # get absolute path of this script
 def getScriptPath():
-    pathname = os.path.dirname(__file__)
-    return os.path.abspath(pathname)
+    # determine if application is a script file or frozen exe
+    if getattr(sys, 'frozen', False):
+        application_path = os.path.dirname(sys.executable)
+    elif __file__:
+        application_path = os.path.dirname(__file__)
+
+    return application_path
 
 
 def getAbsPath(relPath: str):
-    return os.path.abspath(relPath.replace("/", os.sep))
+    return os.path.abspath(getScriptPath() + ('/' + relPath).replace("/", os.sep))
 
 
 # Downloads a file by url

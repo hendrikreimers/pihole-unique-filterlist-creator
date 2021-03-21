@@ -6,11 +6,11 @@ f.createDir("tmp")
 f.createDir("dist")
 
 # get some basics
-urlListFile = open('urlLists/_nearly-all.txt', 'r')
+urlListFile = open(f.getAbsPath('urlLists/_nearly-all.txt'), 'r')
 urlList     = urlListFile.readlines()
 tmpFileList = []
 #buildFile   = f.getAbsPath("dist/blacklist-all.txt")
-buildFile   = "dist/_nearly-all.txt".replace("/", os.sep)
+buildFile   = f.getAbsPath("dist/_nearly-all.txt")
 
 # delete old list
 f.deleteFilesInList([buildFile])
