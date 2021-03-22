@@ -64,7 +64,11 @@ for example you can run it by downloading it to your pihole and add it to a cron
 
 you can it like this:
 
-    # export URL_DOMAIN="yourdomain.com" && /usr/local/bin/pihole-update-static.sh 
+    # export URL_DOMAIN="yourdomain.com" && /usr/local/bin/pihole-update-static.sh
+
+or as risky example
+
+    #  export URL_DOMAIN="yourdomain.com" && curl -sSLf https://yourdomain.com/dist/pihole-update-static-lists.sh | bash
    
 
 ## Sources
