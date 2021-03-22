@@ -35,6 +35,17 @@ Thats rises the file size, too.
 ### Whitelist
 You must include the whitelist by the admin panel or the console command manually
 
+If you want to auto import it, add a cronjob to your pihole (raspberry pi) and
+run this command before the gravity updates (before "pihole updateGravity" in cronjob)
+
+    wget https://blackhole.site23.de/dist/_whitelist.txt -O /etc/pihole/whitelist.txt -q
+
+found this solution in:
+
+    /etc/.pihole/gravity.sh
+
+but for regex whitelist and blacklist it's not completed i think in pihole
+
 ### Regular Expression lists
 The same like the whitelist. Import manually.
 
