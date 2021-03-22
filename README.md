@@ -51,6 +51,21 @@ The same like the whitelist. Import manually.
 
 The regex blacklis is also helpful for blocking youtube ads in the browser (not in the apps).
 
+## Other helpful stuff
+
+with this python script there are some helpful things coming with it.
+for example the "distinct-list.html" which helps you to make unique URL category lists, by filtering doubled urls out
+
+in the "dist" folder you will also find a shell script which helps you to import the static manual lists "_[...].txt"
+it downloads from a given url the static lists (see in the script) and access the pihole db to clear all values based on
+the comment "__AUTOUPDATE__" and reimports the lists by the url files
+
+for example you can run it by downloading it to your pihole and add it to a cronjob (not the same time as the gravidy update of course)
+
+you can it like this:
+
+    # export URL_DOMAIN="yourdomain.com" && /usr/local/bin/pihole-update-static.sh 
+   
 
 ## Sources
 Build the URL list based on the reports of:
