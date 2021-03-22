@@ -24,6 +24,7 @@ g.live.com
 dl.delivery.mp.microsoft.com
 geo-prod.do.dsp.mp.microsoft.com
 displaycatalog.mp.microsoft.com
+sls.update.microsoft.com
 clientconfig.passport.net
 v10.events.data.microsoft.com
 v20.events.data.microsoft.com
