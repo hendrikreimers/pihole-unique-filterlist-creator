@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
 https://v.firebog.net/hosts/BillStearns.txt
 https://hostsfile.org/Downloads/hosts.txt
 https://www.joewein.net/dl/bl/dom-bl-base.txt
-https://v.firebog.net/hosts/Kowabit.txt
+#https://v.firebog.net/hosts/Kowabit.txt
 https://adblock.mahakala.is
 https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
 https://raw.githubusercontent.com/CamelCase11/UnifiedHosts/master/hosts.all
