@@ -69,7 +69,7 @@ bit.ly
 ow.ly
 tinyurl.com
 adfoc.us
-cdn.optimizely.com (Used by Origin for content delivery)
+cdn.optimizely.com
 s.shopify.com
 dl.dropboxusercontent.com
 ns1.dropbox.com
