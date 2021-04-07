@@ -1,4 +1,3 @@
 ^(.*\.)?fritz\.box$
 ^(.*\.)?arlo\.com$
 (\.|^)stackoverflow\.com$
-(\.|^)gstatic\.com$
