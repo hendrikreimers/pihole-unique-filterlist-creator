@@ -163,3 +163,4 @@ nexusrules.officeapps.live.com
 watson.telemetry.microsoft.com
 storage.googleapis.com
 fonts.gstatic.com
+cdn.shopify.com
