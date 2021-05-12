@@ -164,3 +164,4 @@ watson.telemetry.microsoft.com
 storage.googleapis.com
 fonts.gstatic.com
 cdn.shopify.com
+amzn.to
