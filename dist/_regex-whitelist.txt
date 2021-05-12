@@ -2,3 +2,5 @@
 ^(.*\.)?arlo\.com$
 (\.|^)stackoverflow\.com$
 ^encrypted-tbn(.*)\.gstatic\.com$
+(\.|^)akamaized\.net$
+arc\.msn\.com(\.nsatc\.net|)$
