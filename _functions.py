@@ -58,7 +58,11 @@ def concatenateFiles(sourceFileList: list, targetFile: str):
     lines_seen = set() # cache for alread read lines
     regex = r"^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}[ \t]+)?((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])([ \t]?#.*)?$" # Domain validation expression
     commentRegex = re.compile(r"^#.*$")
-    
+
+    # Get the static whitelist
+    with open(f.getAbsPath("dist/_whitelist-filter.txt")) as whitelistFile:
+        staticWhitelist = whitelistFile.readlines()
+
     with open(targetFile, 'w', encoding="utf8") as outfile: # open target file
 
         for fname in sourceFileList: # run through each temp file
@@ -76,7 +80,10 @@ def concatenateFiles(sourceFileList: list, targetFile: str):
                                 if outline.strip() != "0.0.0.0" and outline.strip() != "127.0.0.1" and outline.strip() != "": # dont block all ;-)
                                     if outline not in lines_seen: # check if line alread read
 
-                                        outfile.write(outline) # write to big file
+                                        # Check if the line is not in the whitelist, so it should be ignored
+                                        if outline not in staticWhitelist:
+                                            outfile.write(outline) # write to big file
+
                                         lines_seen.add(outline) # cache the line so it will be not written twice
     
     lines_seen = [] # clear cache (maybe useless)
