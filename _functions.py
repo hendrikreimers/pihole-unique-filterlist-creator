@@ -60,7 +60,7 @@ def concatenateFiles(sourceFileList: list, targetFile: str):
     commentRegex = re.compile(r"^#.*$")
 
     # Get the static whitelist
-    with open(f.getAbsPath("dist/_whitelist-filter.txt")) as whitelistFile:
+    with open(getAbsPath("dist/_whitelist-filter.txt")) as whitelistFile:
         staticWhitelist = whitelistFile.readlines()
 
     with open(targetFile, 'w', encoding="utf8") as outfile: # open target file
