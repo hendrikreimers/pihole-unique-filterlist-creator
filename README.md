@@ -38,7 +38,7 @@ You must include the whitelist by the admin panel or the console command manuall
 If you want to auto import it, add a cronjob to your pihole (raspberry pi) and
 run this command before the gravity updates (before "pihole updateGravity" in cronjob)
 
-    0 3   * * 7   root   wget https://blackhole.site23.de/dist/_whitelist.txt -O /etc/pihole/whitelist.txt -q > /dev/null
+    0 3   * * 7   root   wget https://pihole.yoursite.net/_whitelist.txt -O /etc/pihole/whitelist.txt -q > /dev/null
 
 found this solution in:
 
