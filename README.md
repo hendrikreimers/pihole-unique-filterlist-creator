@@ -77,6 +77,7 @@ Build the URL list based on the reports of:
 * https://firebog.net/
 * https://github.com/topics/pihole-blocklists
 * https://avoidthehack.com/best-pihole-blocklists#blocklistcollections
+* https://github.com/blocklistproject/Lists
 
 ## Windows binary
 
