@@ -1,0 +1,2 @@
+# lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections, https://github.com/lightswitch05/hosts)
+https://www.github.developerdan.com/hosts/lists/dating-services-extended.txt

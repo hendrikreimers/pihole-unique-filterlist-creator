@@ -76,7 +76,7 @@ Build the URL list based on the reports of:
 * https://www.technoy.de/lists/blocklists-fuer-pihole/
 * https://firebog.net/
 * https://github.com/topics/pihole-blocklists
-
+* https://avoidthehack.com/best-pihole-blocklists#blocklistcollections
 
 ## Windows binary
 
