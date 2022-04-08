@@ -1,0 +1,4 @@
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
+# BETA Smart TV call home and ads
+https://blocklistproject.github.io/Lists/alt-version/smart-tv-nl.txt

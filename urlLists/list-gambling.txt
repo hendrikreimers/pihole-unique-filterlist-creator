@@ -1,2 +1,3 @@
 # Gambling
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/gambling
+https://blocklistproject.github.io/Lists/alt-version/gambling-nl.txt

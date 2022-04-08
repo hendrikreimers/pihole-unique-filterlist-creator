@@ -1,0 +1,2 @@
+# Torrent directory - Will likely block legit torrent sites used for legal software download
+https://blocklistproject.github.io/Lists/alt-version/torrent-nl.txt

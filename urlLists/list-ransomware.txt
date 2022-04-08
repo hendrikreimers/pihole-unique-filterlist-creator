@@ -1,0 +1,2 @@
+# Known sites that host or contain ransomware
+https://blocklistproject.github.io/Lists/alt-version/ransomware-nl.txt

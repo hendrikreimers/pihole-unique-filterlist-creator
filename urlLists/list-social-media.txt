@@ -14,3 +14,4 @@ https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/messaging
 https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt
 # lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)
 https://www.github.developerdan.com/hosts/lists/facebook-extended.txt
+https://blocklistproject.github.io/Lists/alt-version/facebook-nl.txt

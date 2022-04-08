@@ -1,0 +1,2 @@
+# Sites that redirect your from your intended site
+https://blocklistproject.github.io/Lists/alt-version/redirect-nl.txt

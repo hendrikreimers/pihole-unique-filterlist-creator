@@ -1,2 +1,3 @@
 # Betrügerische Websites
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist
+https://blocklistproject.github.io/Lists/alt-version/fraud-nl.txt

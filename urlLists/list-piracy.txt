@@ -1,0 +1,2 @@
+# Knows sites that allow for illegal downloads
+https://blocklistproject.github.io/Lists/alt-version/piracy-nl.txt
