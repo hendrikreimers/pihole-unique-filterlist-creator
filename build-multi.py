@@ -22,10 +22,11 @@ for urlFile in urlFileLists:
             tmpFileName = f.getTempFilename()
             downloadUrl = url.strip()
 
-            f.pMsg("Downloading...", True)
-            f.download(downloadUrl, tmpFileName)
-            tmpFileList.append(tmpFileName)
-            f.pMsg("Done")
+            if f.validateUri(downloadUrl):
+                f.pMsg("Downloading...", True)
+                f.download(downloadUrl, tmpFileName)
+                tmpFileList.append(tmpFileName)
+                f.pMsg("Done")
 
     f.pMsg("Building list in: " + distFile, True)
     f.concatenateFiles(tmpFileList, distFile)

@@ -1,5 +1,5 @@
 import os, sys
-import wget
+import requests
 import tempfile
 import re
 
@@ -42,15 +42,39 @@ def getAbsPath(relPath: str):
     return os.path.abspath(getScriptPath() + ('/' + relPath).replace("/", os.sep))
 
 
+def validateUri(line: str):
+    urlRegex = re.compile(r"^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:\/?#[\]@!\$&'\(\)\*\+,;=.]+$") # URL validation expression
+    commentRegex = re.compile(r"^#.*$")
+
+    if not commentRegex.search(line): # ignore something like comments
+        outline = line.strip()
+        if urlRegex.search(outline):
+            if outline != "0.0.0.0" and outline != "127.0.0.1" and outline != "": # dont block all ;-)
+                return True
+
+    return False
+
+
 # Downloads a file by url
 def download(url: str, targetFile: str):
     print("Downloading: " + url)
     print("   to: " + targetFile)
-	
+
+    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"}
+
+    r = requests.get(url, allow_redirects = True, stream = True, headers = headers)
+
     try:
-        wget.download(url, targetFile)
+        with open(targetFile, "wb") as targetHandle:
+            if not r.ok:
+                print(response)
+            else:
+                for chunk in r.iter_content(chunk_size = 1024):
+                    # writing one chunk at a time to pdf file
+                    if chunk:
+                        targetHandle.write(chunk)
     except Exception as ex:
-	    print("--- Error downloading")
+	    print("--- Error downloading: " + url)
 
 
 # concatenate files and not adding duplicates to the big file

@@ -19,11 +19,12 @@ f.deleteFilesInList([buildFile])
 for url in urlList:
     tmpFileName = f.getTempFilename()
     downloadUrl = url.strip()
-    
-    f.pMsg("Downloading...", True)
-    f.download(downloadUrl, tmpFileName)
-    tmpFileList.append(tmpFileName)
-    f.pMsg("Done")
+
+    if f.validateUri(downloadUrl):
+        f.pMsg("Downloading...", True)
+        f.download(downloadUrl, tmpFileName)
+        tmpFileList.append(tmpFileName)
+        f.pMsg("Done")
 
 # build big list
 bigListTmpFile = f.getTempFilename()
