@@ -1,8 +1,9 @@
-^(.*\.)?fritz\.box$
-^(.*\.)?arlo\.com$
-(\.|^)stackoverflow\.com$
-^encrypted-tbn(.*)\.gstatic\.com$
-(\.|^)akamaized\.net$
-arc\.msn\.com(\.nsatc\.net|)$
-(\.|^)icloud\.com$
-(\.|^)bonialcampaigns\.com$
+^(.*\\.)?fritz\\.box$
+^(.*\\.)?arlo\\.com$
+(\\.|^)stackoverflow\\.com$
+^encrypted-tbn(.*)\\.gstatic\\.com$
+(\\.|^)akamaized\.net$
+arc\\.msn\\.com(\\.nsatc\\.net|)$
+(\\.|^)icloud\.com$
+(\\.|^)bonialcampaigns\\.com$
+^(.*\\.)?amazonaws\\.com$
