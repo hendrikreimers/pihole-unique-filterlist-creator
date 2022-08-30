@@ -113,6 +113,32 @@ spiegel-de.spiegel.de
 ec-ns.sascdn.com
 cdn1.smartadserver.com
 acdn.adnxs.com
+game-assets.haydaygame.com
+game.haydaygame.com
+www.google-analystics.com
+ssl.google-analystics.com
+ctldl.windowsupdate.com
+dl.delivery.mp.microsoft.com
+displaycatalog.mp.microsoft.com
+sls.update.microsoft.com
+geo-prod.do.dsp.mp.microsoft.com
+msedge.net
+www.msedge.net
+login.live.com
+settings-win.data.microsoft.com
+tlu.dl.delivery.mp.microsoft.com
+storeedgefd.dsx.mp.microsoft.com
+browser.pipe.aria.microsoft.com
+mobile.pipe.aria.microsoft.com
+nexusrules.officeapps.live.com
+watson.telemetry.microsoft.com
+storage.googleapis.com
+fonts.gstatic.com
+cdn.shopify.com
+amzn.to
+
+# Some Facebook Whitelisting (cause it is not only in the social media blacklist)
+# Remove if you really want to enable the social media blacklist
 scontent.xx.fbcdn.net
 connect.facebook.net
 star.c10r.facebook.com
@@ -143,30 +169,9 @@ b-api.facebook.com
 fb.me
 bigzipfiles.facebook.com
 l.facebook.com
-game-assets.haydaygame.com
-game.haydaygame.com
-www.google-analystics.com
-ssl.google-analystics.com
-ctldl.windowsupdate.com
-dl.delivery.mp.microsoft.com
-displaycatalog.mp.microsoft.com
-sls.update.microsoft.com
-geo-prod.do.dsp.mp.microsoft.com
-msedge.net
-www.msedge.net
-login.live.com
-settings-win.data.microsoft.com
-tlu.dl.delivery.mp.microsoft.com
-storeedgefd.dsx.mp.microsoft.com
-browser.pipe.aria.microsoft.com
-mobile.pipe.aria.microsoft.com
-nexusrules.officeapps.live.com
-watson.telemetry.microsoft.com
-storage.googleapis.com
-fonts.gstatic.com
-cdn.shopify.com
-amzn.to
 
+# Twitter Whitelisting (cause it is not only in the social media blacklist)
+# Remove if you really want to enable the social media blacklist
 twitter.com
 www.twitter.com
 urls.api.twitter.com
@@ -186,6 +191,7 @@ p.twitter.com
 #spruce-goose-ad.twitter.com
 abs.twimg.com
 
+# Youtube whitelisting of some domains if you use the youtube blacklist
 i9.ytimg.com
 #googleads.g.doubleclick.net
 redirector.googlevideo.com
