@@ -1,11 +1,11 @@
 https://raw.githubusercontent.com/blocklistproject/Lists/master/tracking.txt
 # Easy Privacy
-https://github.com/r-a-y/mobile-hosts/blob/master/EasyPrivacySpecific.txt
+https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/EasyPrivacySpecific.txt
 https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/EasyPrivacy3rdParty.txt
 # THIS LIST WILL AGGRESSIVELY BLOCK TRACKING
 # lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections, https://github.com/lightswitch05/hosts)
 https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt
-https://github.com/HenningVanRaumle/pihole-ytadblock/blob/master/ytadblock.txt
+https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
 # Advertisement
 https://adaway.org/hosts.txt
 https://v.firebog.net/hosts/AdguardDNS.txt
