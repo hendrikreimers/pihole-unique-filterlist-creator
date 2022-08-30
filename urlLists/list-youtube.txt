@@ -1,1 +1,1 @@
-https://github.com/HenningVanRaumle/pihole-ytadblock/blob/master/ytadblock.txt
+https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
