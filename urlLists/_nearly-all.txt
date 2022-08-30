@@ -49,7 +49,6 @@ https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/crypto
 https://zerodot1.gitlab.io/CoinBlockerLists/list.txt
 https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt
 https://zerodot1.gitlab.io/CoinBlockerLists/list_optional.txt
-https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt
 # Other (Firebog, w3kbl)
 https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
 # lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections, https://github.com/lightswitch05/hosts)
@@ -181,7 +180,6 @@ https://www.technoy.de/lists/Session-Replay.txt
 # Samsung
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/samsung
 # Firebog (w3kbl)
-https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST
 https://blocklistproject.github.io/Lists/alt-version/tracking-nl.txt
 https://blocklistproject.github.io/Lists/alt-version/tiktok-nl.txt
 # Torrent directory - Will likely block legit torrent sites used for legal software download

@@ -2,6 +2,5 @@ https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/crypto
 https://zerodot1.gitlab.io/CoinBlockerLists/list.txt
 https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt
 https://zerodot1.gitlab.io/CoinBlockerLists/list_optional.txt
-https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt
 # Other (Firebog, w3kbl)
 https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser

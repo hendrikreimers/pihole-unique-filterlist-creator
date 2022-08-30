@@ -17,5 +17,4 @@ https://www.technoy.de/lists/Session-Replay.txt
 # Samsung
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/samsung
 # Firebog (w3kbl)
-https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST
 https://blocklistproject.github.io/Lists/alt-version/tracking-nl.txt
