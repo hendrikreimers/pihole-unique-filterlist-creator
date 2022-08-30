@@ -20,3 +20,8 @@ https://www.technoy.de/lists/FireTVAds.txt
 # Firebog (w3kbl)
 # lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)
 https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
+# AdGuard
+https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt
+# General Ad-lists
+https://raw.githubusercontent.com/biroloter/Mobile-Ad-Hosts/master/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts

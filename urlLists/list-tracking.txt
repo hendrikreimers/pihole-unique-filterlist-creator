@@ -1,0 +1,4 @@
+https://raw.githubusercontent.com/blocklistproject/Lists/master/tracking.txt
+# Easy Privacy
+https://github.com/r-a-y/mobile-hosts/blob/master/EasyPrivacySpecific.txt
+https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/EasyPrivacy3rdParty.txt

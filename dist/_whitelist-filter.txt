@@ -184,3 +184,10 @@ cards.twitter.com
 p.twitter.com
 #spring-chicken-ad.twitter.com
 #spruce-goose-ad.twitter.com
+
+i9.ytimg.com
+#googleads.g.doubleclick.net
+redirector.googlevideo.com
+manifest.googlevideo.com
+s.youtube.com
+r4---sn-4g5e6nl7.googlevideo.com

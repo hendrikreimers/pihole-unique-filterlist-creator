@@ -1,13 +1,12 @@
-https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
-https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts
-https://v.firebog.net/hosts/static/w3kbl.txt
-https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt
-https://someonewhocares.org/hosts/zero/hosts
-https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
-https://winhelp2002.mvps.org/hosts.txt
-https://v.firebog.net/hosts/neohostsbasic.txt
-https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
-https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
+https://raw.githubusercontent.com/blocklistproject/Lists/master/tracking.txt
+# Easy Privacy
+https://github.com/r-a-y/mobile-hosts/blob/master/EasyPrivacySpecific.txt
+https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/EasyPrivacy3rdParty.txt
+# THIS LIST WILL AGGRESSIVELY BLOCK TRACKING
+# lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections, https://github.com/lightswitch05/hosts)
+https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt
+https://github.com/HenningVanRaumle/pihole-ytadblock/blob/master/ytadblock.txt
+# Advertisement
 https://adaway.org/hosts.txt
 https://v.firebog.net/hosts/AdguardDNS.txt
 https://v.firebog.net/hosts/Admiral.txt
@@ -18,59 +17,58 @@ https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimet
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-https://v.firebog.net/hosts/Easyprivacy.txt
-https://v.firebog.net/hosts/Prigent-Ads.txt
-https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
-https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
-https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
-https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST
-https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt
-https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
-https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
-https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
-https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
-https://v.firebog.net/hosts/Prigent-Crypto.txt
-https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
-https://phishing.army/download/phishing_army_blocklist_extended.txt
-https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
-https://v.firebog.net/hosts/Shalla-mal.txt
-https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
-https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
-https://urlhaus.abuse.ch/downloads/hostfile/
-https://v.firebog.net/hosts/Prigent-Malware.txt
-https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt
-https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
-https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Germany.txt
-https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
 https://raw.githubusercontent.com/w13d/adblockListABP-PiHole/master/Spotify.txt
 https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt
 https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt
 https://raw.githubusercontent.com/anudeepND/youtubeadsblacklist/master/domainlist.txt
+# Exotic Technology Ads
 https://www.technoy.de/lists/blocklist.txt
+# FireTV
 https://www.technoy.de/lists/FireTVAds.txt
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Win10Telemetry
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/MS-Office-Telemetry
-https://www.technoy.de/lists/Session-Replay.txt
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/samsung
-https://www.technoy.de/lists/Suspicious.txt
-https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt
-https://raw.githubusercontent.com/vokins/yhosts/master/hosts
-https://v.firebog.net/hosts/BillStearns.txt
-https://hostsfile.org/Downloads/hosts.txt
-https://www.joewein.net/dl/bl/dom-bl-base.txt
-https://v.firebog.net/hosts/Kowabit.txt
-https://adblock.mahakala.is
-https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
-https://raw.githubusercontent.com/CamelCase11/UnifiedHosts/master/hosts.all
-https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts
-https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/notserious
-https://www.technoy.de/lists/fake-streaming.txt
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Streaming
+# Firebog (w3kbl)
+# lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)
+https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
+# AdGuard
+https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt
+# General Ad-lists
+https://raw.githubusercontent.com/biroloter/Mobile-Ad-Hosts/master/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+# AMP Accelerated Mobile pages (by Google)
+# lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections, https://github.com/lightswitch05/hosts)
+https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock1
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock2
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock3
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock4
+https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list
+https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+https://blocklistproject.github.io/Lists/alt-version/porn-nl.txt
+https://blocklistproject.github.io/Lists/alt-version/crypto-nl.txt
+https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/crypto
+https://zerodot1.gitlab.io/CoinBlockerLists/list.txt
+https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt
+https://zerodot1.gitlab.io/CoinBlockerLists/list_optional.txt
+https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt
+# Other (Firebog, w3kbl)
+https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
+# lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections, https://github.com/lightswitch05/hosts)
+https://www.github.developerdan.com/hosts/lists/dating-services-extended.txt
+https://blocklistproject.github.io/Lists/alt-version/drugs-nl.txt
+# Fake Science
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Fake-Science
+# Covid19
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/spam.mails
+# Betrügerische Websites
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist
+https://blocklistproject.github.io/Lists/alt-version/fraud-nl.txt
+https://raw.githubusercontent.com/blocklistproject/Lists/master/fraud.txt
+# Gambling
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/gambling
+https://blocklistproject.github.io/Lists/alt-version/gambling-nl.txt
+# lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections, https://github.com/lightswitch05/hosts)
+https://www.github.developerdan.com/hosts/lists/hate-and-junk-extended.txt
+# Malware
 https://www.technoy.de/lists/malware2.txt
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware
 https://raw.githubusercontent.com/hectorm/hmirror/master/data/disconnect.me-malvertising/list.txt
@@ -79,18 +77,112 @@ https://raw.githubusercontent.com/hectorm/hmirror/master/data/malwaredomainlist.
 https://raw.githubusercontent.com/hectorm/hmirror/master/data/malwaredomains.com-immortaldomains/list.txt
 https://raw.githubusercontent.com/hectorm/hmirror/master/data/malwaredomains.com-justdomains/list.txt
 https://raw.githubusercontent.com/hectorm/hmirror/master/data/ransomwaretracker.abuse.ch/list.txt
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/child-protection
-https://www.technoy.de/lists/xporn.txt
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Fake-Science
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/spam.mails
+https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
+https://blocklistproject.github.io/Lists/alt-version/malware-nl.txt
+# OISD (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)
+https://dbl.oisd.nl/basic/
+# Phising
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-Angriffe
 https://raw.githubusercontent.com/hectorm/hmirror/master/data/eth-phishing-detect/list.txt
+https://phishing.army/download/phishing_army_blocklist_extended.txt
 http://phishing.mailscanner.info/phishing.bad.sites.conf
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/crypto
-https://zerodot1.gitlab.io/CoinBlockerLists/list.txt
-https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt
-https://zerodot1.gitlab.io/CoinBlockerLists/list_optional.txt
-https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist
-https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/gambling
+# Spam Mails
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/spam.mails
+# Malicious (Firebog, w3kbl)
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
+https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+https://v.firebog.net/hosts/Prigent-Crypto.txt
+https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
+https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
+https://v.firebog.net/hosts/Shalla-mal.txt
+https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
+https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
+https://urlhaus.abuse.ch/downloads/hostfile/
+https://v.firebog.net/hosts/Prigent-Malware.txt
+https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt
+https://blocklistproject.github.io/Lists/alt-version/phishing-nl.txt
+# Knows sites that allow for illegal downloads
+https://blocklistproject.github.io/Lists/alt-version/piracy-nl.txt
+# Proxies to turnaround pihole
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/proxies
+# Known sites that host or contain ransomware
+https://blocklistproject.github.io/Lists/alt-version/ransomware-nl.txt
+# Sites that redirect your from your intended site
+https://blocklistproject.github.io/Lists/alt-version/redirect-nl.txt
+https://blocklistproject.github.io/Lists/alt-version/scam-nl.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
+# BETA Smart TV call home and ads
+https://blocklistproject.github.io/Lists/alt-version/smart-tv-nl.txt
+# Tiktok
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-tiktok.txt
+# Facebook
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-facebook.txt
+# Snapchat
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-snapchat.txt
+# Instagram
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-instagram.txt
+# Twitter
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-twitter.txt
+# Whatsapp
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/messaging/blocklist-messaging-w
+# Facebook (Firebog, w3kbl)
+https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt
+# lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)
+https://www.github.developerdan.com/hosts/lists/facebook-extended.txt
+https://blocklistproject.github.io/Lists/alt-version/facebook-nl.txt
+# Suspicious and not legal streaming
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Streaming
+https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
+https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts
+https://v.firebog.net/hosts/static/w3kbl.txt
+https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt
+https://someonewhocares.org/hosts/zero/hosts
+https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+https://winhelp2002.mvps.org/hosts.txt
+https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
+https://v.firebog.net/hosts/BillStearns.txt
+https://hostsfile.org/Downloads/hosts.txt
+https://www.joewein.net/dl/bl/dom-bl-base.txt
+https://v.firebog.net/hosts/Kowabit.txt
+https://adblock.mahakala.is
+https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
+https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts
+https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list
+# Not Serious
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/notserious
+# Fake Streaming and debt collection
+https://www.technoy.de/lists/fake-streaming.txt
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Streaming
+# Firebog (w3kbl)
+https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
+https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
+https://winhelp2002.mvps.org/hosts.txt
+https://v.firebog.net/hosts/neohostsbasic.txt
+https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
+https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
+# Tracking and Telemetry
+https://v.firebog.net/hosts/Easyprivacy.txt
+https://v.firebog.net/hosts/Prigent-Ads.txt
+https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
+https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
+https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
+https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt
+https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
+# Windows 10
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Win10Telemetry
+# MS-Office-Telemetry
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/MS-Office-Telemetry
+# Session Replay
+https://www.technoy.de/lists/Session-Replay.txt
+# Samsung
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/samsung
+# Firebog (w3kbl)
+https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST
+https://blocklistproject.github.io/Lists/alt-version/tracking-nl.txt
+https://blocklistproject.github.io/Lists/alt-version/tiktok-nl.txt
+# Torrent directory - Will likely block legit torrent sites used for legal software download
+https://blocklistproject.github.io/Lists/alt-version/torrent-nl.txt
