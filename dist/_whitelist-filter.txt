@@ -184,6 +184,7 @@ cards.twitter.com
 p.twitter.com
 #spring-chicken-ad.twitter.com
 #spruce-goose-ad.twitter.com
+abs.twimg.com
 
 i9.ytimg.com
 #googleads.g.doubleclick.net
