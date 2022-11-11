@@ -21,3 +21,4 @@ playmoviesdfe-pa.googleapis.com
 ^mads\\.
 ^pixels?[-.]
 ^stat(s|istics)?[0-9]*[_.-]
+^(.*\.)?example\.org$
