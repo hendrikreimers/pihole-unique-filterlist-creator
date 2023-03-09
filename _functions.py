@@ -62,11 +62,15 @@ def download(url: str, targetFile: str):
     print("Downloading: " + url)
     print("   to: " + targetFile)
 
-    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"}
-
-    r = requests.get(url, allow_redirects=True, stream=True, headers=headers)
+    # Some settings like the headers to be sent or whether SSL Certs should be validated and a timeout
+    # I know verifying SSL is a good idea, but in some cases it isn't helpful (maybe if you're behind a proxy)
+    headers     = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"}
+    verifySsl   = False
+    connTimeout = 10
 
     try:
+        r = requests.get(url, verify=verifySsl, timeout=connTimeout, allow_redirects=True, stream=True, headers=headers)
+
         with open(targetFile, "wb") as targetHandle:
             if not r.ok:
                 print(response)
