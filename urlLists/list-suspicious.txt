@@ -6,7 +6,6 @@ https://someonewhocares.org/hosts/zero/hosts
 https://raw.githubusercontent.com/vokins/yhosts/master/hosts
 https://winhelp2002.mvps.org/hosts.txt
 https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
-https://v.firebog.net/hosts/BillStearns.txt
 https://hostsfile.org/Downloads/hosts.txt
 https://www.joewein.net/dl/bl/dom-bl-base.txt
 https://v.firebog.net/hosts/Kowabit.txt

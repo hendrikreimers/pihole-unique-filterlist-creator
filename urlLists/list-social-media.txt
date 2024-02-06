@@ -8,8 +8,6 @@ https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-me
 https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-instagram.txt
 # Twitter
 https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-twitter.txt
-# Whatsapp
-https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/messaging/blocklist-messaging-w
 # Facebook (Firebog, w3kbl)
 https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt
 # lightswitch05 (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)

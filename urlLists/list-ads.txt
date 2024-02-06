@@ -12,7 +12,6 @@ https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 https://raw.githubusercontent.com/w13d/adblockListABP-PiHole/master/Spotify.txt
 https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt
 https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt
-https://raw.githubusercontent.com/anudeepND/youtubeadsblacklist/master/domainlist.txt
 # Exotic Technology Ads
 https://www.technoy.de/lists/blocklist.txt
 # FireTV
