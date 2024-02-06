@@ -26,3 +26,6 @@ https://winhelp2002.mvps.org/hosts.txt
 https://v.firebog.net/hosts/neohostsbasic.txt
 https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
 https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
+# NEW 2024-02-06
+# https://github.com/RPiList/specials/tree/master/Blocklisten
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/notserious

@@ -1,2 +1,5 @@
 https://blocklistproject.github.io/Lists/alt-version/crypto-nl.txt
 https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt
+# NEW 2024-02-06
+# https://github.com/RPiList/specials/tree/master/Blocklisten
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/crypto

@@ -1,2 +1,5 @@
 # Suspicious and not legal streaming
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Streaming
+# NEW 2024-02-06
+# https://github.com/RPiList/specials/tree/master/Blocklisten
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Streaming

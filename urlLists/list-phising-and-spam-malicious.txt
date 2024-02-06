@@ -19,3 +19,9 @@ https://urlhaus.abuse.ch/downloads/hostfile/
 https://v.firebog.net/hosts/Prigent-Malware.txt
 https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt
 https://blocklistproject.github.io/Lists/alt-version/phishing-nl.txt
+# NEW 2024-02-06
+# https://github.com/RPiList/specials/tree/master/Blocklisten
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-Angriffe
+# NEW 2024-02-06
+# https://github.com/RPiList/specials/tree/master/Blocklisten
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/spam.mails

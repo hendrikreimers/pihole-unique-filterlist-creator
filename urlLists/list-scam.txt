@@ -1,1 +1,7 @@
 https://blocklistproject.github.io/Lists/alt-version/scam-nl.txt
+# NEW 2024-02-06
+# https://github.com/RPiList/specials/tree/master/Blocklisten
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DomainSquatting1
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DomainSquatting2
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DomainSquatting3
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DomainSquatting4

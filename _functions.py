@@ -65,7 +65,7 @@ def download(url: str, targetFile: str):
     # Some settings like the headers to be sent or whether SSL Certs should be validated and a timeout
     # I know verifying SSL is a good idea, but in some cases it isn't helpful (maybe if you're behind a proxy)
     headers     = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0"}
-    verifySsl   = False
+    verifySsl   = True
     connTimeout = 10
 
     try:

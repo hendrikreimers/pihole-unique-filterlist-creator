@@ -18,3 +18,7 @@ https://www.technoy.de/lists/Session-Replay.txt
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/samsung
 # Firebog (w3kbl)
 https://blocklistproject.github.io/Lists/alt-version/tracking-nl.txt
+# NEW 2024-02-06
+# https://github.com/RPiList/specials/tree/master/Blocklisten
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/MS-Office-Telemetry
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Win10Telemetry
