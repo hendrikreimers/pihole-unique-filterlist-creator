@@ -86,7 +86,7 @@ def download(url: str, targetFile: str):
 # concatenate files and not adding duplicates to the big file
 def concatenateFiles(sourceFileList: list, targetFile: str):
     lines_seen = set()  # cache for alread read lines
-    regex = r"^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}[ \t]+)?((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])([ \t]?#.*)?$"  # Domain validation expression
+    regex = r"^[\|]{0,2}([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}[ \t]+)?((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])([ \t]?#.*)?[\^]?$"  # Domain validation expression
     commentRegex = re.compile(r"^#.*$")
 
     # Get the static whitelist
