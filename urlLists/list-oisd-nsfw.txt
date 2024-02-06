@@ -1,2 +1,2 @@
-# OISD (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)
-https://dbl.oisd.nl/nsfw/
+# OISD https://oisd.nl/setup
+https://nsfw.oisd.nl/

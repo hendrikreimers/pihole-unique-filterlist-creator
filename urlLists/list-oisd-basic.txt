@@ -1,2 +1,2 @@
-# OISD (https://avoidthehack.com/best-pihole-blocklists#blocklistcollections)
-https://dbl.oisd.nl/basic/
+# OISD https://oisd.nl/setup
+https://small.oisd.nl/
