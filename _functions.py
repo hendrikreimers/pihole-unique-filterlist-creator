@@ -110,18 +110,23 @@ def concatenateFiles(sourceFileList: list, targetFile: str):
 
                         if len(matches) > 0:
                             outline = clean_line  # Keep the original ABP style line
-                            domain = matches[0][1].strip()  # Extract the domain for filtering
+
+                            # Don't change that entry if it's an ABP style
+                            if outline.startswith('||') and outline.endswith('^'):
+                                domain = outline
+                            else:
+                                domain = matches[0][1].strip()  # Extract the domain for filtering
 
                             # Handle lines starting with '0.0.0.0' or '127.0.0.1' followed by whitespace and a domain
                             if outline.startswith('0.0.0.0 ') or outline.startswith('127.0.0.1 '):
                                 domain = outline.split()[1]
 
-                            if domain and domain not in lines_seen:  # Check if line already read
-
+                            # Check if line already read
+                            if domain and domain not in lines_seen:
                                 # Check if the domain is not in the whitelist, so it should be ignored
                                 if domain not in staticWhitelist:
-                                    abp_style_entry = f"||{domain}^"  # Convert to ABP style
-                                    outfile.write(abp_style_entry + '\n')  # Write to big file
+                                    #abp_style_entry = f"||{domain}^"  # Convert to ABP style
+                                    outfile.write(domain + '\n')  # Write to big file
 
                                 lines_seen.add(domain)  # Cache the domain so it will not be written twice
 

@@ -5,7 +5,7 @@ Helps to create a really big filter blacklist for pi-hole with unique domains
 
 ### 2024-07-13
 
-- Changes made in the `_functions.py` to transform anything to ABP List style.
+- Changes made in the `_functions.py` to keep entries with ABP List style.
   The old behaviour is still available in `_functions-old.py` if you want to use this instead.
 - Optional: `install.sh` and `run.sh` script now uses Pythons VENV, optionally. **If you want to use it in, just uncomment that lines in the scripts!**
 - Added missing requirement in the `requirements.txt`
