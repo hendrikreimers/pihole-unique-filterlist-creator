@@ -84,13 +84,9 @@ def download(url: str, targetFile: str):
 
 
 # concatenate files and not adding duplicates to the big file
-# concatenate files and not adding duplicates to the big file
 def concatenateFiles(sourceFileList: list, targetFile: str):
     lines_seen = set()  # cache for alread read lines
-
-    # Support ABP Style lists with the new regex
-    regex = r"^[\|]{0,2}([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}[ \t]+)?((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])([ \t]?#.*)?[\^]?[\|]?$"  # Domain validation expression (including ABP style)
-
+    regex = r"^[\|]{0,2}([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}[ \t]+)?((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])([ \t]?#.*)?[\^]?$"  # Domain validation expression
     commentRegex = re.compile(r"^#.*$")
 
     # Get the static whitelist
@@ -105,27 +101,24 @@ def concatenateFiles(sourceFileList: list, targetFile: str):
                 for each_line in open(fname, "r", encoding="utf8"):  # read each line in that file
 
                     if not commentRegex.search(each_line):  # ignore something like comments
-                        clean_line = each_line.strip()
-                        matches = re.findall(regex, clean_line)  # find only domain names
+                        matches = re.findall(regex, each_line.strip())  # find only domain names
 
                         if len(matches) > 0:
-                            outline = clean_line  # Keep the original ABP style line
-                            domain = matches[0][1].strip()  # Extract the domain for filtering
+                            if len(matches[0]) > 0:
+                                outline = matches[0][1].strip()
+                                outlineToWrite = outline + '\n'  # merges to correct pihole block line
 
-                            # Handle lines starting with '0.0.0.0' or '127.0.0.1' followed by whitespace and a domain
-                            if outline.startswith('0.0.0.0 ') or outline.startswith('127.0.0.1 '):
-                                domain = outline.split()[1]
+                                if outline != "0.0.0.0" and outline != "127.0.0.1" and outline != "":  # don't block them all ;-)
+                                    if outline not in lines_seen:  # check if line already read
 
-                            if domain and domain not in lines_seen:  # Check if line already read
+                                        # Check if the line is not in the whitelist, so it should be ignored
+                                        if outline not in staticWhitelist:
+                                            outfile.write(outlineToWrite)  # write to big file
 
-                                # Check if the domain is not in the whitelist, so it should be ignored
-                                if domain not in staticWhitelist:
-                                    abp_style_entry = f"||{domain}^"  # Convert to ABP style
-                                    outfile.write(abp_style_entry + '\n')  # Write to big file
-
-                                lines_seen.add(domain)  # Cache the domain so it will not be written twice
+                                        lines_seen.add(outline)  # cache the line so it will be not written twice
 
     lines_seen = []  # clear cache (maybe useless)
+
 
 # deletes a list of files
 def deleteFilesInList(fileList: list):
