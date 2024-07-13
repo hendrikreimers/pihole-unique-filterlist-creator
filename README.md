@@ -9,6 +9,7 @@ Helps to create a really big filter blacklist for pi-hole with unique domains
   The old behaviour is still available in `_functions-old.py` if you want to use this instead.
 - Optional: `install.sh` and `run.sh` script now uses Pythons VENV, optionally. **If you want to use it in, just uncomment that lines in the scripts!**
 - Added missing requirement in the `requirements.txt`
+- You can switch to old functionality with the argument: `--mode old`
 
 ## What does is do or not?
 It's a really small not perfect script, but works well :-)

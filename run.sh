@@ -6,4 +6,4 @@ cd $BASEDIR
 #python3 build.py
 
 #source ./bin/activate
-python3 build-multi.py
+python3 build-multi.py $1 $2
