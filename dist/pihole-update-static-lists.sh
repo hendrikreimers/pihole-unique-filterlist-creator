@@ -22,7 +22,7 @@ DB_TYPE_BLACKLIST_REGEX=3
 DB_GRAVITY="/etc/pihole/gravity.db"
 
 # SQLITE 3 Binary
-SQLBIN="/usr/bin/sqlite3"
+SQLBIN="pihole-FTL sqlite3"
 
 # Inser patterns
 INSERT_PATTERN="INSERT INTO domainlist (domain, type, date_added, date_modified, enabled, comment) VALUES ('%s', %s, date('now'), date('now'), 1, '${COMMENT_ID}');"
@@ -69,4 +69,4 @@ import_domains $URL_LIST_REGEX_WHITELIST $DB_TYPE_WHITELIST_REGEX
 import_domains $URL_LIST_WHITELIST $DB_TYPE_WHITELIST
 
 # Restart FTL
-pihole restartdns reload-lists
+pihole reloaddns reloadlists
